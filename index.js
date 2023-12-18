@@ -3,9 +3,9 @@ function callBack () {
     console.log("hello")
 };
 function receivesAFunction (callBack) {
-    callBack();
+    callBack ();
 }
-receivesAFunction();
+receivesAFunction(callBack);
 
 
 function returnsANamedFunction () {
@@ -14,12 +14,14 @@ function returnsANamedFunction () {
     };
 }
 returnsANamedFunction ();
+addTogether ();
 
 
 function returnsAnAnonymousFunction () {
     return function () {console.log("hiiiii")}
 };
-returnsAnAnonymousFunction ();
+const greeting = returnsAnAnonymousFunction ();
+greeting ();
 
 
 
