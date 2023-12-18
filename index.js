@@ -1,20 +1,25 @@
 
-iAmSaidFunction = () => console.log("ha.")
-function receivesAFunction (iAmSaidFunction) {
-    iAmSaidFunction();
-}
-
-const returnsANamedFunction = () => {
-    const addTogether = ( x = "I did it!") => {
-       console.log(addTogether);
-    };
-    return addTogether;
-}
-
-const returnsAnAnonymousFunction = () => {
-    return function () {console.log("")}
+function callBack () {
+    console.log("hello")
 };
+function receivesAFunction (callBack) {
+    callBack();
+}
+receivesAFunction();
 
+
+function returnsANamedFunction () {
+    return addTogether = ( x = "I did it!") => {
+       console.log(x);
+    };
+}
+returnsANamedFunction ();
+
+
+function returnsAnAnonymousFunction () {
+    return function () {console.log("hiiiii")}
+};
+returnsAnAnonymousFunction ();
 
 
 
